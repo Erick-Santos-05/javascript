@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        input#botao:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        input#botao:active{
+            transform: scale(1);
+        }
+        input#botao{
+            margin: 0px 10px;
+            border-color: red;
+            border-radius: 5px;
+            color: red;
+            transition: transform .2s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nacionalidade</h1>
+    <span>Digite seu país de Nascimento:</span>
+    <input type="text" name="pais" id="pais">
+    <input type="button" id="botao" value="ENVIAR" onclick="teste()">
+    <div id="res"></div>
+
+    <script>
+        function teste() 
+        {
+            var pais = document.querySelector('input#pais');
+            var nacao = (pais.value);
+            var resul = document.querySelector('div#res');
+
+            if (nacao != 'Brasil' && nacao != 'brasil' && nacao != 'Brazil' && nacao != 'brazil')  
+                {
+                    resul.innerHTML = ('Você é Estrangeiro!');
+                }else
+                    {
+                        resul.innerHTML = ('Você é Brasileiro!');
+                    }
+        }
+    </script>
+</body>
+
+</html>

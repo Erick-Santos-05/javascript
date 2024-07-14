@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Dados</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: linear-gradient(180deg, green, purple);
+            height: 94.5vh;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 2.5em;
+        }
+        p{
+            text-align: justify;
+            opacity: 0.1;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        p:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!!</h1>
+    <p>(Esse professor ele é muito lerdo, pelo amor de Deus, esse cara demorou 8 aulas pra ensinar a fazer um documento HTML, surreal o que ele esta fazendo. É de cair o cú da bunda, cara isso é surealllllllll, olá Jaqueline. Já me livrei desse cú de maldição que não muda absolutamente nada.)</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número:')); //retorna sempre string
+        var n2 = Number(window.prompt('Digite outro número:'));
+        var n3 = n1 + n2;
+        /*
+            Number.parseInt(n) converte para número inteiro
+            Number.parseFloat(n) converte para número real
+
+            n.toString()
+            String()
+        */
+        window.alert(`A soma entre ${n1} e ${n2} é igual à ${String(n3)}`);
+
+        // `O aluno ${nome} com ${idade} anos, tirou a nota ${nota}` novo template para concatenar= ${}placeholder
+    </script>
+</body>
+</html>

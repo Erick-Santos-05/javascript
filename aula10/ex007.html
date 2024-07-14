@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+        #bct>div{
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="cu">
+        <h1>somando valores</h1>
+        <input type="number" name="txtn1" id="txtn1">
+        +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="SOMAR" onclick="somar()">
+        <div id="bct">
+            <div id="res">Resultado:</div>
+            <div id="resul"></div>
+        </div>
+    </div>
+
+    <script>
+        function somar()
+        {
+            tn1 = document.getElementById('txtn1');
+            tn2 = document.getElementById('txtn2');
+            var resul = document.getElementById('resul');
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s=n1+n2
+
+            resul.innerText='Olá, Mundo!'
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="sel" id="sel">
+        <option value="vazio" disabled selected>selecione</option>
+        <option value="1" id="op1">Opção 1</option>
+        <option value="2" id="op2">Opção 2</option>
+        <option value="3" id="op3">Opção 3</option>
+    </select>
+    <script>
+        var sel = document.getElementById('sel');
+        sel.addEventListener('change', selecao);
+
+        function selecao(evento) {
+            const selecaoValor = evento.target.value;
+
+            if (selecaoValor == '1') {
+                alert('1')
+            }
+        }
+    </script>
+    <!-- 
+    °Change:
+
+    change é um tipo de evento no JavaScript que é acionado quando o valor de um elemento de formulário muda e o elemento perde o foco. No contexto de um <select>, o evento change é disparado quando o usuário seleciona uma nova opção.
+
+    °Evento:
+
+    evento é um objeto que representa o evento que ocorreu. Quando você adiciona um ouvinte de eventos (event listener) a um elemento, a função callback que você fornece recebe um objeto de evento como argumento. Esse objeto contém informações sobre o evento e pode ser usado para acessar o elemento que disparou o evento, os dados associados ao evento, entre outras coisas.
+
+    °Evento-target:
+
+    evento.target refere-se ao elemento que disparou o evento. No caso de um evento change em um elemento <select>, evento.target será o próprio elemento <select>. Isso é útil porque permite que a função callback acesse o elemento que gerou o evento sem precisar referenciá-lo diretamente pelo ID ou outro seletor.
+
+    °Evento-target-value:
+
+    evento.target.value é o valor do elemento que disparou o evento. No caso de um elemento <select>, evento.target.value será o valor da opção selecionada. Isso permite que a função callback saiba qual opção foi escolhida pelo usuário.
+    -->
+</body>
+
+</html>

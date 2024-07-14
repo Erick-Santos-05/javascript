@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatar strings</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome:');
+        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.</br>`); //document.write = escreve na tela. writeln= escreve e pula para linha de baixo. document.InWrite = escreve na linha de baixo. lenght = mostra o tamanho da variavel.
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.</br>`);//toUpperCase() = deixa tudo em maiúsculo
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`);//toLowerCasa() = deixa tudo em minusculo
+
+        /*
+        var n1 = 1545.5
+        >n1
+        1545.5
+        >n1.toFixed(2).replace('.',',') .toFixed(2), formata quantas casas exibira na tela, nesse exemplo 2 para duas casas, .replace('',''), troca algo por outro algo, nesse exemplo trocou . por , 
+        '1545,50'
+        >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) .toLocaleString ('') localiza a string na linguigem que vc colocar dentro do parenteses entre aspas. nesse exemplo pt-BR, {style: 'currency' (mostra em valor monetario), currency: '(coloca o tipo de moeda colocar, nesse exemplo BRL para colocar na moeda brasileira, o real.)'}. Assim formatando o número no modelo de dinheiro.
+        'R$ 1.545,50'
+
+        !=não
+        &&=e
+        ||=ou
+
+        Ternário
+        média>=7?'Aprovado':'Reprovado'
+        teste lógigo?se for verdadeiro:se for falso
+        */
+    </script>
+</body>
+
+</html>

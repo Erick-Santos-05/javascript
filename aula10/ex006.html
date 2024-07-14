@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOOM</title>
+    <style>
+        #area{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+       interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById
+        ('area')
+        // addEventListener = presta atenção em um determinado evento colocado entre aspas reservado pelo JS, substituindo toda aquela estrutura inline no codigo html
+
+        a.addEventListener('click', clicar) //reconhece click
+        a.addEventListener('mouseenter', entrar) //reconhece quando o mouse entra
+        a.addEventListener('mouseout', sair) //reconhece quando o mouse sai
+
+        function clicar()
+        {
+            a.innerText = 'clicou!'
+            a.style.background='red' 
+        }
+        function entrar()
+        {
+            a.innerText = 'entrou!'
+        }
+        function sair()
+        {
+            a.innerText = 'saiu!'
+            a.style.background='green'
+        }
+    </script>
+</body>
+</html>
