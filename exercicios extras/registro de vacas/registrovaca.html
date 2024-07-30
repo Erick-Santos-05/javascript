@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Vaca</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registrador de Vaca</h1>
+    </header>
+    <section>
+        <div>
+            <h1>Digite o peso:</h1>
+            <input type="number" name="peso" id="peso">
+            <div class="botao">
+                <input type="button" value="ENVIAR" onclick="vaca()" id="enviar">
+                <input type="button" value="FINALIZAR" onclick="finalizar()" id="finalizar">
+            </div>
+        </div>
+        <div>
+            <p id="msg"></p>
+            <div class="botao">
+                <input type="button" value="RESETAR" onclick="resete()" id="resetar">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Erick Samuel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

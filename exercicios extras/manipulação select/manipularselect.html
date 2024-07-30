@@ -1,32 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manipulador Select</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
-    <select name="sel" id="sel">
-        <option value="vazio" disabled selected>selecione</option>
-        <option value="1" id="op1">Opção 1</option>
-        <option value="2" id="op2">Opção 2</option>
-        <option value="3" id="op3">Opção 3</option>
-    </select>
-    <script>
-        var sel = document.getElementById('sel');
-        sel.addEventListener('change', selecao);
+    <header>
+        <h1>Manipulação Select</h1>
+    </header>
+    <section>
+        <div>
+            <select name="sel" id="sel">
+                <option value="vazio" disabled selected>selecione</option>
+                <option value="1" id="op1">Opção 1</option>
+                <option value="2" id="op2">Opção 2</option>
+                <option value="3" id="op3">Opção 3</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Erick Samuel</p>
+    </footer>
 
-        function selecao(evento) {
-            const selecaoValor = evento.target.value;
+    <script src="script.js"></script>
+</body>
+</html>
 
-            if (selecaoValor == '1') {
-                alert('1')
-            }
-        }
-    </script>
-    <!-- 
+
+<!-- 
     °Change:
 
     change é um tipo de evento no JavaScript que é acionado quando o valor de um elemento de formulário muda e o elemento perde o foco. No contexto de um <select>, o evento change é disparado quando o usuário seleciona uma nova opção.
@@ -43,6 +47,3 @@
 
     evento.target.value é o valor do elemento que disparou o evento. No caso de um elemento <select>, evento.target.value será o valor da opção selecionada. Isso permite que a função callback saiba qual opção foi escolhida pelo usuário.
     -->
-</body>
-
-</html>
